@@ -8,4 +8,6 @@
  */
 
 rootProject.name = 'rsmaster'
-include('app', 'list', 'utilities')
+
+// include('utilities')
+include('app')
