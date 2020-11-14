@@ -1,15 +1,23 @@
-apply plugin: 'application'
-apply plugin: 'org.jetbrains.kotlin.jvm'
-
-mainClassName = "org.rsmaster.App"
-description = 'The game server engine'
+plugins {
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm'
+}
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk8'
-    compile group: 'org.jetbrains.kotlin', name: 'kotlin-scripting-common'
-    compile group: 'org.jetbrains.kotlin', name: 'kotlin-script-runtime'
+    implementation project(':util')
+
+
+    implementation group:'org.jetbrains.kotlin', name:'kotlin-stdlib-jdk8'
+    implementation group:'org.jetbrains.kotlin', name:'kotlin-scripting-common'
+    implementation group:'org.jetbrains.kotlin', name:'kotlin-script-runtime'
+
+    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-jdk8', version: '1.4.0'
 }
+
+mainClassName = "org.rsmaster.Server"
+description = 'The game server engine'
+
