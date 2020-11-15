@@ -9,5 +9,5 @@
 
 rootProject.name = 'rsmaster'
 
-include('util')
-include('app')
+include 'util'
+include 'app'

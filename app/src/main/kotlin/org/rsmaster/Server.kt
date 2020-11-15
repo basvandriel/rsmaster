@@ -1,5 +1,17 @@
-package org.rsmaster;
+package org.rsmaster
 
-fun main(args: Array<String>) {
-    println("Hello, world!")
+/**
+* The server logger.
+*/
+private val logger = mu.KotlinLogging.logger {}
+
+fun main() {
+    val server = Server();
+    server.start();
+}
+
+class Server() {
+    fun start() {
+        logger.info { "Starting up server..." }
+    }
 }
