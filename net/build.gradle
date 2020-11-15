@@ -1,0 +1,6 @@
+description = 'The game network utility'
+
+dependencies {
+    implementation project(':util')
+    implementation group:'io.netty', name:'netty-all', version: '4.1.54.Final'
+}

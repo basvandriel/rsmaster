@@ -1,7 +1,7 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm'
 }
-
+    
 dependencies {
     // Align versions of all Kotlin components
     implementation platform('org.jetbrains.kotlin:kotlin-bom')

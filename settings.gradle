@@ -10,4 +10,5 @@
 rootProject.name = 'rsmaster'
 
 include 'util'
+include 'net'
 include 'game'
