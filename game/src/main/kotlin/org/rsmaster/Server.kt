@@ -12,10 +12,10 @@ fun main() {
     var start = System.currentTimeMillis()
 
     try {
-        val server = Server();
-        server.start();
+        val server = Server()
+        server.start()
     } catch (e: Exception) {
-		System.exit(0);
+        System.exit(0)
     }
 
     logger.info { "Startup took ${System.currentTimeMillis() - start}ms" }
