@@ -10,4 +10,4 @@
 rootProject.name = 'rsmaster'
 
 include 'util'
-include 'app'
+include 'game'
